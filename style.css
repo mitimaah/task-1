@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: green;
+}
+
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: #808000;
+  border: 5px solid black;
+}
+
+.grid-container {
+  top: 12%;
+  left: 3%;
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+}
+
+.grid-item {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  background-color: #3498db;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(45deg);
+  background-color: red;
+  border: 5px solid black;
+}
+
+.item1 {
+  grid-row: 1; /* Place in the first row */
+  grid-column: 2; /* Place in the first column */
+}
+
+.item2 {
+  grid-row: 2; /* Place in the second row */
+  grid-column: 1; /* Place in the second column */
+}
+
