@@ -38,6 +38,7 @@ body {
   display: flex;
   flex-direction: row;
   gap: 6.25rem;
+  margin-right: 2rem;
 }
 
 .two-squares {
@@ -80,13 +81,13 @@ body {
   margin-left: 14.2rem;
 }
 
-.two-vertical-rectangles {
+.two-horizontal-rectangles {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
 }
 
-.vertical-rectangle {
+.horizontal-rectangle {
   width: 7.5rem;
   height: 1.2rem;
   background-color: var(--beta-color);
@@ -101,8 +102,8 @@ body {
   border: var(--border-width) solid black;
 }
 
-.horizontal-rectangle {
-  width: 14.3rem;
+.vertical-rectangle {
+  min-width: 14.3rem;
   height: 31.25rem;
   background-color: white;
   border: var(--border-width) solid black;
@@ -113,5 +114,62 @@ body {
 .abc-text {
   font-size: 3.75rem;
   font-family: var(--font-family-base);
-  margin-top: 0.63rem;
+  margin-top: 0.7rem;
+}
+
+@media only screen and (max-width: 583px) {
+  .shapes-container {
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 0.63rem;
+  }
+
+  .grid-container {
+    left: 5%;
+  }
+
+  .squares-ellipse-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .middle-section {
+    margin-top: 14.3rem;
+    margin-left: 0;
+  }
+
+  .vertical-rectangle {
+    background-color: var(--beta-color);
+  }
+}
+
+@media only screen and (min-width: 583px) and (max-width: 900px) {
+  .shapes-container {
+    flex-wrap: wrap;
+    margin-left: 0.62rem;
+  }
+
+  .squares-ellipse-section {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+  }
+
+  .two-squares {
+    margin-top: 3.2rem;
+    margin-left: 3.2rem;
+  }
+
+  .grid-container {
+    left: 5%;
+  }
+
+  .middle-section {
+    margin-top: 15.6rem;
+    margin-left: 0;
+  }
+
+  .vertical-rectangle {
+    background-color: var(--delta-color);
+  }
 }
