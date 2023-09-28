@@ -21,7 +21,7 @@ body {
 }
 
 .nav {
-  height: 60px;
+  height: 3.75rem;
   width: 100%;
   background-color: var(--alpha-color);
   border: var(--border-width) solid black;
@@ -37,12 +37,12 @@ body {
 .squares-ellipse-section {
   display: flex;
   flex-direction: row;
-  gap: 100px;
+  gap: 6.25rem;
 }
 
 .two-squares {
-  margin-top: 40px;
-  margin-left: 40px;
+  margin-top: 2.5rem;
+  margin-left: 2.5rem;
 }
 
 .grid-container {
@@ -54,12 +54,8 @@ body {
 }
 
 .grid-item {
-  width: 120px;
-  height: 120px;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 7.5rem;
+  height: 7.5rem;
   transform: rotate(45deg);
   background-color: red;
   border: var(--border-width) solid black;
@@ -79,43 +75,43 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 35px;
-  margin-top: 120px;
-  margin-left: 230px;
+  gap: 2.2rem;
+  margin-top: 7.5rem;
+  margin-left: 14.2rem;
 }
 
 .two-vertical-rectangles {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .vertical-rectangle {
-  width: 120px;
-  height: 20px;
+  width: 7.5rem;
+  height: 1.2rem;
   background-color: var(--beta-color);
   border: var(--border-width) solid black;
 }
 
 .ellipse {
-  height: 100px;
-  width: 110px;
+  height: 6.25rem;
+  width: 6.8rem;
   border-radius: 50%;
   background-color: var(--gamma-color);
   border: var(--border-width) solid black;
 }
 
 .horizontal-rectangle {
-  width: 230px;
-  height: 500px;
+  width: 14.3rem;
+  height: 31.25rem;
   background-color: white;
   border: var(--border-width) solid black;
   text-align: center;
-  font-size: 60px;
-  font-family: var(--font-family-base);
-  margin: 40px 25px;
+  margin: 2.5rem 1.5rem;
 }
 
 .abc-text {
-  margin-top: 10px;
+  font-size: 3.75rem;
+  font-family: var(--font-family-base);
+  margin-top: 0.63rem;
 }
